@@ -49,7 +49,7 @@ class ActionLeaveNote(Action):
             after all required slots are filled"""
         with open("Output.txt", "w") as text_file:
             print("New dom needed")
-        dispatcher.utter_message("HHHHH")
+        #dispatcher.utter_message("HHHHH")
         # utter submit template
         dispatcher.utter_template("utter_make_note", tracker)
         return []
