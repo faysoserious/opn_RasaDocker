@@ -8,7 +8,7 @@ services:
       - ./:/app
       - ./custom:/app/custom
     environment: 
-      - PYTHONPATH=$PYTHONPATH:"D:\00000_Masterthesis\RasaXDocker\custom\ga_channel.py"
+      - PYTHONPATH=$PYTHONPATH:"/home/fay/project/RasaXDocker/custom"
     command:
       - run
   action_server:
@@ -16,6 +16,6 @@ services:
     volumes:
       - ./actions:/app/actions
     environment: 
-      - PYTHONPATH=$PYTHONPATH:"D:\00000_Masterthesis\RasaXDocker\actions"
+      - PYTHONPATH=$PYTHONPATH:"/home/fay/project/RasaXDocker/actions"
   redis:
     image: redis:latest
