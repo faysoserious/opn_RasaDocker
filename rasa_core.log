@@ -17,3 +17,30 @@ task: <Task pending coro=<TCPConnector._resolve_host() done, defined at d:\pytho
 2019-06-17 19:32:55,968 [WARNI]  Found policies ['TwoStageFallbackPolicy', 'MappingPolicy'] with same priority 3 in PolicyEnsemble. When personalizing priorities, be sure to give all policies different priorities. More information: https://rasa.com/docs/rasa/core/policies/
 2019-06-17 19:35:17,118 [ERROR]  Task was destroyed but it is pending!
 task: <Task pending coro=<configure_app.<locals>.run_cmdline_io() running at /usr/local/lib/python3.6/site-packages/rasa/core/run.py:116> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x7efeb767f588>()]>>
+2019-06-18 12:35:39,516 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/usr/local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/usr/local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL / not found
+2019-06-18 12:35:39,693 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/usr/local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/usr/local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-06-18 12:38:47,282 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/usr/local/lib/python3.6/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/usr/local/lib/python3.6/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL / not found

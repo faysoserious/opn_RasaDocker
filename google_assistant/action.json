@@ -33,12 +33,12 @@
   "conversations": {
     "welcome": {
       "name": "welcome",
-      "url": "https://5f63a533.ngrok.io/webhooks/google_home/webhook",
+      "url": "https://f3bda0f0.ngrok.io/webhooks/google_home/webhook",
       "fulfillmentApiVersion": 2
     },
     "<rasa_intent>": {
       "name": "rasa_intent",
-      "url": "https://5f63a533.ngrok.io/webhooks/google_home/webhook",
+      "url": "https://f3bda0f0.ngrok.io/webhooks/google_home/webhook",
       "fulfillmentApiVersion": 2
     }
   },
