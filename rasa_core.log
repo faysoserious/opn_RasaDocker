@@ -1,0 +1,19 @@
+No valid configuration given to load agent.
+Agent could not be loaded with the provided configuration.Load default agent without any model.
+exception calling callback for <Future at 0x2398c0428d0 state=finished returned list>
+Traceback (most recent call last):
+  File "d:\python\envs\rasa1.0\lib\concurrent\futures\_base.py", line 324, in _invoke_callbacks
+    callback(self)
+  File "d:\python\envs\rasa1.0\lib\asyncio\futures.py", line 362, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "d:\python\envs\rasa1.0\lib\asyncio\base_events.py", line 733, in call_soon_threadsafe
+    self._check_closed()
+  File "d:\python\envs\rasa1.0\lib\asyncio\base_events.py", line 480, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+Task was destroyed but it is pending!
+task: <Task pending coro=<TCPConnector._resolve_host() done, defined at d:\python\envs\rasa1.0\lib\site-packages\aiohttp\connector.py:773> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at d:\python\envs\rasa1.0\lib\asyncio\futures.py:348, <TaskWakeupMethWrapper object at 0x000002398BFDCCA8>()]> cb=[shield.<locals>._done_callback() at d:\python\envs\rasa1.0\lib\asyncio\tasks.py:776]>
+2019-06-17 19:32:53,205 [INFO ]  Starting Rasa Core server on http://localhost:5005
+2019-06-17 19:32:55,968 [WARNI]  Found policies ['TwoStageFallbackPolicy', 'MappingPolicy'] with same priority 3 in PolicyEnsemble. When personalizing priorities, be sure to give all policies different priorities. More information: https://rasa.com/docs/rasa/core/policies/
+2019-06-17 19:35:17,118 [ERROR]  Task was destroyed but it is pending!
+task: <Task pending coro=<configure_app.<locals>.run_cmdline_io() running at /usr/local/lib/python3.6/site-packages/rasa/core/run.py:116> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x7efeb767f588>()]>>
