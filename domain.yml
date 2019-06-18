@@ -56,8 +56,7 @@ actions:
 - utter_enhance_speech
 - utter_enhance_ambience
 - utter_reduce_intensity
-- utter_occlusion
-- utter_make_note
+- utter_occlusion_make_note
 - utter_thanks
 - utter_botname
 - utter_call_audiologist
@@ -179,12 +178,9 @@ templates:
   - text: "   try 'natural' to balance sounds and make them less intense ? is that better in this context ?"
   - text: "   try 'natural' to reduce ambient sounds and intensity ? do you prefer that in this situation ?"
   
-  utter_occlusion:
-  - text: "hmmm sounds like you might benefit from a more open type of speaker dome"
-  
-  utter_make_note:
-  - text: "i'll make a note of this for your clinician"
-  - text: "i'll leave a message about this for your clinician"
+  utter_occlusion_make_note:
+  - text: "hmmm sounds like you might benefit from a more open type of speaker dome. i'll make a note of this for your clinician"
+  - text: "hmmm sounds like you might benefit from a more open type of speaker dome. i'll leave a message about this for your clinician"
   
   utter_thanks:
   - text: "sure no problem."
